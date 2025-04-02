@@ -1,0 +1,15 @@
+[Unit]
+Description=lichess-bot
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Environment="PYTHONUNBUFFERED=1"
+ExecStart=/usr/bin/python3 /home/thibault/lichess-bot/lichess-bot.py
+WorkingDirectory=/home/thibault/lichess-bot/
+User=thibault
+Group=thibault
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
