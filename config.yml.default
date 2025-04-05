@@ -2,8 +2,8 @@ token: "lip_n0qaII6BTuFSDxPHB6US"    # Lichess OAuth2 Token.
 url: "https://lichess.org/"        # @/DIYAR39.
 
 engine:                            # Engine settings.
-  dir: "./engines/"                # Directory containing the engine. This can be an absolute path or one relative to lichess-bot/.
-  name: "engine_name"              # Binary name of the engine to use.
+  dir: "./star/"                # Directory containing the engine. This can be an absolute path or one relative to lichess-bot/.
+  name: "star"              # Binary name of the engine to use.
 # interpreter: "java"
 # interpreter_options:
 #   - "-jar"
@@ -142,15 +142,15 @@ challenge:                         # Incoming challenges.
   min_days: 1                      # Minimum number of days per move to accept a challenge for a correspondence game.
   variants:                        # Chess variants to accept (https://lichess.org/variant).
     - standard
-#   - fromPosition
-#   - antichess
-#   - atomic
-#   - chess960
-#   - crazyhouse
-#   - horde
-#   - kingOfTheHill
-#   - racingKings
-#   - threeCheck
+   - fromPosition
+   - antichess
+   - atomic
+   - chess960
+   - crazyhouse
+   - horde
+   - kingOfTheHill
+   - racingKings
+   - threeCheck
   time_controls:                   # Time controls to accept (bots are not allowed to play ultraBullet).
     - bullet
     - blitz
@@ -217,11 +217,11 @@ matchmaking:
 #   bullet_only_horde:             # Name of the override. Can be anything as long as each override has a unique name ("bullet_only_horde" and "easy_chess960" in these examples).
 #     challenge_variant: "horde"   # List of options to override. Only the options mentioned will change when making the challenge. The rest will follow the default matchmaking options above.
 #     challenge_initial_time:
-#       - 1
-#       - 2
+#   1    - 1
+#   100    - 2
 #     challenge_increment:
-#       - 0
-#       - 1
+#   1    - 0
+#   100    - 1
 #
 #   easy_chess960:
 #     challenge_variant: "chess960"
@@ -234,8 +234,8 @@ matchmaking:
 #     challenge_initial_time:
 #     challenge_increment:
 #     challenge_days:
-#       - 2
-#       - 3
+#     1  - 2
+#     1000  - 3
 #     challenge_mode: casual
 #
 # The following configurations cannot be overridden: allow_matchmaking, challenge_timeout, challenge_filter and block_list.
