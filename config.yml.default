@@ -3,8 +3,8 @@ url: "https://lichess.org/"        # @/DIYAR39.
 
 engine:                            # Engine settings.
   dir: "./engines/"                # Directory containing the engine. This can be an absolute path or one relative to lichess-bot/.
-  name: "engine_name"              # Binary name of the engine to use.
-# interpreter: "java"
+  name: "STAR"              # Binary name of the engine to use.
+# interpreter: ""
 # interpreter_options:
 #   - "-jar"
   working_dir: ""                  # Directory where the chess engine will read and write files. If blank or missing, the current directory is used.
@@ -234,8 +234,8 @@ matchmaking:
 #     challenge_initial_time:
 #     challenge_increment:
 #     challenge_days:
-#       - 2
-#       - 3
+#    100   - 2
+#    1000   - 3
 #     challenge_mode: casual
 #
 # The following configurations cannot be overridden: allow_matchmaking, challenge_timeout, challenge_filter and block_list.
