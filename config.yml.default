@@ -1,5 +1,6 @@
-token: "lip_xUHiZGtARfLM8PpczO1j"    # Lichess OAuth2 Token.
-url: "https://lichess.org/"        # DIYAR39.
+token: "lip_qisUcARrw9GRV1RUONV2
+"    # Lichess OAuth2 Token.
+url: "https://lichess.org/"        #LORD_STAR
 
 engine:                            # Engine settings.
   dir: "./star/"                # Directory containing the engine. This can be an absolute path or one relative to lichess-bot/.
